@@ -30,24 +30,27 @@
 	<div class="container" style="padding: 10px">
 		<h1>
 			<center>Đăng bài viết</center>
+			<hr/>
 		</h1>
-		<div class="col-md-6 col-md-offset-3" >
+		<div class="col-md-8 col-md-offset-2" >
 		  	<form:form action="/" enctype="multipart/form-data"
 			modelAttribute="post" role="form">
 			<div class="form-group">
-				<label for="title" cssclass="control-label col-md-3">Tiêu đề</label>
+				<label for="title" cssclass="control-label">Tiêu đề</label>
 				<form:input path="title" cssClass="form-control" />
 			</div>
 			<div class="form-group">
-				<label for="content" cssclass="control-label col-md-3">Mô tả</label>
+				<label for="content" cssclass="control-label">Mô tả</label>
 				<form:textarea id="input-content"  name="content" cssClass="form-control" path="content" />
 			</div>
-			<div class="form-group col-md-4">
-				<label class="control-label col-md-3" for="name">File</label> <input id="file" type="file" name="file">
+			<div class="form-group">
+				<label cssclass="control-label" for="name">File</label> 
+				<input id="file" type="file" name="file">
 			</div>
-			<br>
-			<br>
-			<button  type="submit" class="btn btn-primary pull-right">Insert</button>
+			<div class="form-group">
+				<form:label path="url" cssClass="form-control" />
+			</div>
+			<button  type="submit" class="btn btn-primary pull-right" style="margin-top:50px;">Insert</button>
 			</form:form>
 		  </div>
 		  <div class="col-md-8 col-md-offset-2" align="center">
@@ -58,7 +61,6 @@
 					<th>Title</th>
 					<th>Content</th>
 					<th>Url</th>
-					<th></th>
 				</tr>
 				<c:forEach var="d" items="${posts}">
 					<tr class="nn-record">
@@ -80,7 +82,7 @@
     <script>
 		$(document).ready(function() {
 			$('#input-content').summernote({
-				  height: 200,                 // set editor height
+				  height: 150,                 // set editor height
 				  minHeight: null,             // set minimum height of editor
 				  maxHeight: null,             // set maximum height of editor
 				  focus: false                  // set focus to editable area after initializing summe

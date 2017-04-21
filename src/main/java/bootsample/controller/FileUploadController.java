@@ -94,8 +94,8 @@ public class FileUploadController {
 
 	@GetMapping("/{id}")
 	public String findById(@PathVariable("id")Integer id, Model model) {
-		Post document = postRepository.findOne(id);
-		model.addAttribute("post", document);
+		Post post = postRepository.findOne(id);
+		model.addAttribute("post", post);
 		return "index";
 	}
 	

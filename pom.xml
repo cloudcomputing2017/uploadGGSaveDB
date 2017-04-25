@@ -138,8 +138,9 @@
 		<plugins>
 			<!-- Package as an executable jar/war -->
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
+			   <groupId>com.google.appengine</groupId>
+			   <artifactId>appengine-maven-plugin</artifactId>
+			   <version>1.9.44</version>
 			</plugin>
 		</plugins>
 	</build>

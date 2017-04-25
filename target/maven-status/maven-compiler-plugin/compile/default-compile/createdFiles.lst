@@ -1,0 +1,12 @@
+bootsample\service\StorageException.class
+bootsample\model\Post.class
+bootsample\service\PostService.class
+bootsample\service\UploadService.class
+bootsample\Application.class
+bootsample\service\StorageProperties.class
+bootsample\service\DriveSample.class
+bootsample\service\StorageService.class
+bootsample\service\FileSystemStorageService.class
+bootsample\dao\PostRepository.class
+bootsample\service\StorageFileNotFoundException.class
+bootsample\controller\FileUploadController.class

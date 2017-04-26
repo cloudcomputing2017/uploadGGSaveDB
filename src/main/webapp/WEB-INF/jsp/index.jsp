@@ -67,7 +67,7 @@
 						<td>${d.id}</td>
 						<td>${d.title}</td>
 						<td>${d.content}</td>
-						<td>${d.url}</td>
+						<td><a href="${d.url}" target="_blank">${d.url}</a></td>
 						<td><a href="/${d.id}">Chi tiết</a></td>
 					</tr>
 				</c:forEach>

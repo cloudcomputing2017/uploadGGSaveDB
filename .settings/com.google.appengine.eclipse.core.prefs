@@ -4,3 +4,4 @@ gaeHrdEnabled=true
 gaeLaunchAppInBrowser=true
 googleCloudSqlEnabled=false
 localDevMySqlEnabled=true
+validationExclusions=src/main/java/bootsample/controller/|src/main/java/bootsample/service/FileSystemStorageService.java
